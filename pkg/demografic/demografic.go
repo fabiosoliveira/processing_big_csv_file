@@ -8,6 +8,12 @@ type DemographicData struct {
 	FaixaEtaria map[string]int
 }
 
+func NewDemographicData() DemographicData {
+	return DemographicData{
+		FaixaEtaria: make(map[string]int),
+	}
+}
+
 func (s *DemographicData) AddMale() {
 	s.TotalMale++
 }
