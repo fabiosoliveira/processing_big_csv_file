@@ -23,9 +23,7 @@ func main() {
 	}
 	defer f.Close()
 
-	demograficData := demografic.DemographicData{
-		FaixaEtaria: make(map[string]int),
-	}
+	demograficData := demografic.NewDemographicData()
 
 	r4 := bufio.NewReader(f)
 	r4.ReadLine()
