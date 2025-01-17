@@ -8,8 +8,8 @@ type DemographicData struct {
 	FaixaEtaria map[string]int
 }
 
-func NewDemographicData() DemographicData {
-	return DemographicData{
+func NewDemographicData() *DemographicData {
+	return &DemographicData{
 		FaixaEtaria: make(map[string]int),
 	}
 }
